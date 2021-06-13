@@ -40,4 +40,4 @@ const DateFormat = (timeStamp: number = new Date().getTime(), format = 'YY:MM:DD
     return time
   }
   
-  export default DateFormat
+  export = DateFormat

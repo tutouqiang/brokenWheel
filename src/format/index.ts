@@ -1,7 +1,7 @@
 import DateFormat from './date'
 import OmitFormat from './omit'
 
-export default  {
+module.exports =  {
     DateFormat,
     OmitFormat
 }
