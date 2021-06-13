@@ -1,16 +1,16 @@
 /**
  * 日期时间的格式化方法
  */
-const DateFormat = (timeStamp: number = new Date().getTime(), format = 'YY:MM:DD H:M:S'):string => { // 日期格式化
+ export const DateFormat = (timeStamp: number = new Date().getTime(), format = 'YY:MM:DD H:M:S'):string => { // 日期格式化
 
     const date = new Date(timeStamp)
   
     let time = JSON.parse(JSON.stringify(format))
-    const MM = date.getMonth() + 1,
-          DD = date.getDate(),
-          H = date.getHours(),
-          M = date.getHours(),
-          S = date.getHours()
+    const MM = date.getMonth() + 1
+    const DD = date.getDate()
+    const H = date.getHours()
+    const M = date.getHours()
+    const S = date.getHours()
   
     const list = [
       {
@@ -39,5 +39,3 @@ const DateFormat = (timeStamp: number = new Date().getTime(), format = 'YY:MM:DD
   
     return time
   }
-  
-  export = DateFormat

@@ -1,5 +1,5 @@
-import DateFormat from './date'
-import OmitFormat from './omit'
+import OmitFormat = require('./omit')
+import DateFormat = require('./date')
 
 module.exports =  {
     DateFormat,

@@ -1,5 +1,4 @@
-// import Format from './src/format/index'
-const Format = require('./src/format')
+import Format = require('./src/format/index')
 
 module.exports =  {
     ...Format
