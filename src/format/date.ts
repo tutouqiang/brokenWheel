@@ -1,7 +1,7 @@
 /**
  * 日期时间的格式化方法
  */
- export const DateFormat = (timeStamp: number = new Date().getTime(), format = 'YY:MM:DD H:M:S'):string => { // 日期格式化
+const DateFormat = (timeStamp: number = new Date().getTime(), format = 'YY:MM:DD H:M:S'):string => { // 日期格式化
 
     const date = new Date(timeStamp)
   
@@ -9,8 +9,8 @@
     const MM = date.getMonth() + 1
     const DD = date.getDate()
     const H = date.getHours()
-    const M = date.getHours()
-    const S = date.getHours()
+    const M = date.getMinutes()
+    const S = date.getSeconds()
   
     const list = [
       {
@@ -39,3 +39,5 @@
   
     return time
   }
+
+  export default DateFormat
