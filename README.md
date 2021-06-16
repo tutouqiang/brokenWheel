@@ -23,10 +23,10 @@ Questions and suggestions are welcome  in ‘issues’
      *  
      */
 例:
-import { DateFormat } from 'format-zc';
+import { DateFormat } from '@wooc/brokenwheel';
 
-<div>{DateFormat(record.gmtCreate, 'YY-MM-DD H:M')}</div>  // 输出：2021-06-12 12:00
-<div>{DateFormat(record.gmtCreate, 'YY:MM:DD H-M-S')}</div>  // 输出：2021:06:12 12-00-12
+<div>{DateFormat(time, 'YY-MM-DD H:M')}</div>  // 输出：2021-06-12 12:00
+<div>{DateFormat(time, 'YY:MM:DD H-M-S')}</div>  // 输出：2021:06:12 12-00-12
 ```
 
 
@@ -53,7 +53,7 @@ import { DateFormat } from 'format-zc';
  */
 
 例:
-import { OmitFormat } from 'format-zc';
+import { OmitFormat } from '@wooc/brokenwheel';
 
 <div>{OmitFormat(13100001111, [3,4,4])}</div>  // 输出：131****1111
 <div>{OmitFormat(13100001111,  [3,1,1], "-")}</div>  // 输出：131-1
