@@ -7,3 +7,5 @@
 .editorconfig
 tslint.json
 tsconfig.json
+package-lock.json
+*.ts
