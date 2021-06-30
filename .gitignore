@@ -1,2 +1,5 @@
 node_modules
 dist
+*.js
+package-lock.json
+*.d.ts

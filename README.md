@@ -5,23 +5,32 @@ In continuous update...
 
 Questions and suggestions are welcome  in ‘issues’
 
+## Get Started
+
+```js
+npm i @wooc/brokenwheel
+import {} from '@wooc/brokenwheel';
+```
 
 
-## method
 
-### DateFormat
+## Method
+
+### Format
+
+#### DateFormat
 
 ```tsx
-/** 		format     string 需要的格式化形式  ==默认为：'YY:MM:DD H:M:S'==
-     *  timeStamp  number 时间戳            ==默认为当前时间==
-     * 'YY:MM:DD H:M:S'
-     *  全部为大写：YY(年)、MM(月)、DD(日)、H(时)、M(分)、S(秒)
-     *  时间中间的间隔符可随意添加
-     *  tip: 多个空格，只输出一个：如Y:M:D     H/M/S 输出为:2020:07:01 00/00/00
-     * 
-     *  例： YY:MM:DD  输出为：2020:07:01
-     *  
-     */
+/**  format     string 需要的格式化形式  ==默认为：'YY:MM:DD H:M:S'==
+  *  timeStamp  number 时间戳            ==默认为当前时间==
+  * 'YY:MM:DD H:M:S'
+  *  全部为大写：YY(年)、MM(月)、DD(日)、H(时)、M(分)、S(秒)
+  *  时间中间的间隔符可随意添加
+  *  tip: 多个空格，只输出一个：如Y:M:D     H/M/S 输出为:2020:07:01 00/00/00
+  * 
+  *  例： YY:MM:DD  输出为：2020:07:01
+  *  
+  */
 例:
 import { DateFormat } from '@wooc/brokenwheel';
 
@@ -31,7 +40,7 @@ import { DateFormat } from '@wooc/brokenwheel';
 
 
 
-### OmitFormat
+#### OmitFormat
 
 ```js
 /**
@@ -44,7 +53,7 @@ import { DateFormat } from '@wooc/brokenwheel';
  *       argv[1]: 后面保留几位,
  *       argv[2]: 显示为几个省略符号, // 默认为省略部分的字符长度
  * 
- *   omitString：String // omit style，default '*'
+ *   omitString：String // 省略符号，default '*'
  * 
  * 例: OmitFormat(13113133333, [1,4,2])       result   1**3333
  *     OmitFormat(13113133333, [0,4,2])       result   **3333

@@ -9,3 +9,6 @@ tslint.json
 tsconfig.json
 package-lock.json
 *.ts
+
+# include the .d.ts files
+!*.d.ts
