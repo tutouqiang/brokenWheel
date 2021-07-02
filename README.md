@@ -69,3 +69,20 @@ import { OmitFormat } from '@wooc/brokenwheel';
 
 ```
 
+#### PriceFormat
+
+```js
+/**
+* 价格格式化
+* params: params:string, option:object
+option: {
+spacerMark: string; 默认为 ','
+}
+*/
+例:
+import { PriceFormat } from '@wooc/brokenwheel';
+
+<div>{PriceFormat('12345')}</div>  // 输出：12,345
+<div>{PriceFormat('1212345.123')}</div>  // 输出：1,212,345.123
+```
+

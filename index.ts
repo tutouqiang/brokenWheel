@@ -1,7 +1,3 @@
-import DateFormat from './src/format/date'
-import OmitFormat from './src/format/omit'
+import * as format from './src/format'
 
-export {
-  DateFormat,
-  OmitFormat
-}
+export = format

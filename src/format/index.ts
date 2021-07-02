@@ -1,7 +1,9 @@
-import OmitFormat = require('./omit')
-import DateFormat = require('./date')
+import OmitFormat from './omit'
+import DateFormat from './date'
+import PriceFormat from './price'
 
-module.exports =  {
-    DateFormat,
-    OmitFormat
+export {
+  DateFormat,
+  OmitFormat,
+  PriceFormat
 }

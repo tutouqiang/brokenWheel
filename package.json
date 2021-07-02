@@ -1,6 +1,6 @@
 {
   "name": "@wooc/brokenwheel",
-  "version": "0.0.2-beta",
+  "version": "0.0.3-beta",
   "description": "破轮子",
   "main": "index.js",
   "types": "index.d.ts",
