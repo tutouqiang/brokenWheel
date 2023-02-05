@@ -1,4 +1,4 @@
-const getType = (d: any): string => {
+const getType = (d: unknown): string => {
   const reg = /(?<=\[object).*(?=])/
   const s = Object.prototype.toString.call(d)
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -6,7 +6,7 @@ const getType = (d: any): string => {
   return s.match(reg)[0].trim()
 }
 
-const isSameType = (a: any, b: any): boolean => {
+const isSameType = (a: unknown, b: unknown): boolean => {
   return getType(a) === getType(b)
 }
 

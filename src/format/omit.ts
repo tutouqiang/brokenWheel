@@ -8,7 +8,6 @@ const OmitFormat = (data: string, argv: number[], omitString = '*'): string => {
   for (let i = 0; i < len; i++) {
     str += omitString
   }
-  console.log(argv[1] > 0 ? text.slice(-argv[1]) : '')
 
   return text.slice(0, argv[0]) + str + (argv[1] > 0 ? text.slice(-argv[1]) : '')
 }
