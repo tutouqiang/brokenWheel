@@ -33,9 +33,7 @@ const DateFormat = (timeStamp: number | string, format = 'YY:MM:DD H:M:S', defau
   ]
 
   list.forEach((item) => {
-    const data = Object.keys(item)[0]
-    const value = Object.values(item)[0]
-    time = time.replace(data, value)
+    time = time.replace(Object.keys(item)[0], Object.values(item)[0])
   })
 
   return time

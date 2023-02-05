@@ -1,4 +1,7 @@
-import DateFormat from './format/date'
-import OmitFormat from './format/omit'
+import * as format from './format'
+import * as route from './route'
 
-export { DateFormat, OmitFormat }
+export default {
+  ...format,
+  ...route,
+}
